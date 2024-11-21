@@ -1,7 +1,7 @@
 import React from "react";
 
-const Index = () => {
+const Challange = () => {
   return <div>Index</div>;
 };
 
-export default Index;
+export default Challange;

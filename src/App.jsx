@@ -6,14 +6,17 @@ import {
   Route,
 } from "react-router-dom";
 import Home from "./peges/home/Index";
+import RouteLayout from "./peges/routeLayout/RouteLayout";
+import Challange from "./peges/challange/Index";
+import About from "./peges/about/Index";
 
 const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route>
+      <Route element={<RouteLayout />}>
         <Route path="/" element={<Home />} />
-        <Route path="/challange" element={<Home />} />
-        <Route path="/about" element={<Home />} />
+        <Route path="/challange" element={<Challange />} />
+        <Route path="/about" element={<About />} />
       </Route>
     )
   );
