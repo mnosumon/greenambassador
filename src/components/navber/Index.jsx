@@ -1,11 +1,19 @@
 import React from "react";
 import HeaderLogo from "../../assets/image/logo-header.png";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className="container mx-auto ">
       <div className="w-[240px]">
         <img className="w-full" alt="logo" src={HeaderLogo} />
+      </div>
+      <div className="">
+        <ul>
+          <NavLink className="text-[#009b72] font-bold font-nunito">
+            Get Start
+          </NavLink>
+        </ul>
       </div>
     </nav>
   );
