@@ -12,9 +12,15 @@ const Navbar = () => {
       </div>
       <div className="">
         <ul className="">
-          <NavLink className="navLinkStyle">Get Start</NavLink>
-          <NavLink className="navLinkStyle">Challange</NavLink>
-          <NavLink className="relative navLinkStyle triangle">About</NavLink>
+          <NavLink to="/" className="navLinkStyle">
+            Get Start
+          </NavLink>
+          <NavLink to="/challange" className="navLinkStyle">
+            Challange
+          </NavLink>
+          <NavLink to="/about" className="relative navLinkStyle triangle">
+            About
+          </NavLink>
           <button className="px-5 py-2 bg-primary text-subHeading text-xl font-bold font-nunito hover:bg-hoverColor transition-all ease-in-out duration-300 rounded-full ml-5">
             Account
           </button>
