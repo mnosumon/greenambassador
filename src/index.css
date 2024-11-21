@@ -5,3 +5,12 @@
 body {
   box-sizing: border-box;
 }
+
+:root {
+  --primary: #009b72;
+  --heading: #2c3038;
+  --subHeading: #fff;
+  --text-color: #555a64;
+  --line-color: gray;
+  --link-color: rgb(255 255 255 / 0.7);
+}

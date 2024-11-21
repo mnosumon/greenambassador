@@ -10,7 +10,7 @@ const Navbar = () => {
       </div>
       <div className="">
         <ul>
-          <NavLink className="text-[#009b72] font-bold font-nunito">
+          <NavLink className="text-[#009b72] px-3 text-xl font-bold font-nunito">
             Get Start
           </NavLink>
         </ul>

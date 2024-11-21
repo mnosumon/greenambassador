@@ -4,25 +4,16 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: [
-          "Nunito",
-          "-apple-system",
-          "BlinkMacSystemFont",
-          '"Segoe UI"',
-          "Roboto",
-          '"Helvetica Neue"',
-          "Arial",
-          '"Noto Sans"',
-          "sans-serif",
-          '"Apple Color Emoji"',
-          '"Segoe UI Emoji"',
-          '"Segoe UI Symbol"',
-          '"Noto Color Emoji"',
-        ],
-      },
-      fontFamily: {
         nunito: ["Nunito", "sans-serif"],
         sans: ["Roboto", "sans-serif"],
+      },
+      colors: {
+        primary: "var(--primary)",
+        heading: "var(--heading)",
+        subHeading: "var(--subHeading)",
+        textColor: "var(--textColor)",
+        lineColor: "var(--line-color)",
+        linkColor: "var(--link-color)",
       },
     },
   },
