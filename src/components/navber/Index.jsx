@@ -1,18 +1,23 @@
 import React from "react";
 import HeaderLogo from "../../assets/image/logo-header.png";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="container mx-auto ">
+    <nav className="container mx-auto flex justify-between items-center">
       <div className="w-[240px]">
-        <img className="w-full" alt="logo" src={HeaderLogo} />
+        <Link>
+          <img className="w-full" alt="logo" src={HeaderLogo} />
+        </Link>
       </div>
       <div className="">
-        <ul>
-          <NavLink className="text-[#009b72] px-3 text-xl font-bold font-nunito">
-            Get Start
-          </NavLink>
+        <ul className="">
+          <NavLink className="navLinkStyle">Get Start</NavLink>
+          <NavLink className="navLinkStyle">Challange</NavLink>
+          <NavLink className="relative navLinkStyle triangle">About</NavLink>
+          <button className="px-5 py-2 bg-primary text-subHeading text-xl font-bold font-nunito hover:bg-hoverColor transition-all ease-in-out duration-300 rounded-full ml-5">
+            Account
+          </button>
         </ul>
       </div>
     </nav>

@@ -13,4 +13,16 @@ body {
   --text-color: #555a64;
   --line-color: gray;
   --link-color: rgb(255 255 255 / 0.7);
+  --hover-color: #00684c;
+}
+
+@layer components {
+  .navLinkStyle {
+    @apply px-3 text-primary text-xl font-bold font-nunito hover:text-hoverColor transition-all ease-in-out duration-300;
+  }
+}
+@layer components {
+  .triangle {
+    @apply after:content-['']  after:border-l-[6px] after:border-l-transparent after:border-r-[6px] after:border-r-transparent after:border-t-8 after:border-t-lineColor after:hover:border-t-[#004f3a] after:absolute after:top-1/2 after:translate-y-[-35%] after:-right-2;
+  }
 }

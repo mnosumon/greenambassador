@@ -14,6 +14,7 @@ export default {
         textColor: "var(--textColor)",
         lineColor: "var(--line-color)",
         linkColor: "var(--link-color)",
+        hoverColor: "var(--hover-color)",
       },
     },
   },
