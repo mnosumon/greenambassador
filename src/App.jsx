@@ -1,7 +1,25 @@
 import React from "react";
+import {
+  createRoutesFromElements,
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+} from "react-router-dom";
+import Home from "./peges/home/Index";
 
 const App = () => {
-  return <div className="bg-slate-500">App</div>;
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route>
+        <Route path="/" element={<Home />} />
+      </Route>
+    )
+  );
+  return (
+    <>
+      <RouterProvider router={router} />
+    </>
+  );
 };
 
 export default App;
