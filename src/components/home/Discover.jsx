@@ -8,7 +8,7 @@ import DeviceLayer from "../../assets/image/deviceLayer.png";
 const Discover = () => {
   return (
     <section>
-      <div className="container mx-auto flex py-5 justify-between gap-10">
+      <div className="container mx-auto flex justify-between gap-10">
         <div className="w-1/2 py-20">
           <div className="w-4/5">
             <Heading
@@ -30,7 +30,7 @@ const Discover = () => {
           </div>
         </div>
         <div className="w-1/2 h-[60vh] relative">
-          <div className="absolute top-0 left-0 w-full h-full">
+          <div className="absolute top-0 -left-[10%] w-full h-full">
             <Blob4Icon />
           </div>
           <div className="w-1/2 h-full absolute -top-[5%] left-[15%]">
