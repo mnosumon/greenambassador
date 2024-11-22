@@ -34,15 +34,3 @@ body {
     mask-size: 100% 101%;
   }
 }
-@layer utilities {
-  .mask-blob-4 {
-    -webkit-mask-image: url("../src/assets/blobs/blob-4.svg");
-    mask-image: url("../src/assets/blobs/blob-4.svg");
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    mask-position: center;
-    -webkit-mask-size: cover;
-    mask-size: cover;
-  }
-}

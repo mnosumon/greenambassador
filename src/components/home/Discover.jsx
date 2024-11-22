@@ -2,11 +2,12 @@ import React from "react";
 import Heading from "../utilities/Heading";
 import Peragrap from "../utilities/Peragrap";
 import PrimaryBTN from "../utilities/PrimaryBTN";
+import { Blob, Blob4Icon } from "../../assets/svg/Blob4Icon";
 
 const Discover = () => {
   return (
     <section>
-      <div className="container mx-auto flex justify-between">
+      <div className="container mx-auto flex justify-between gap-10">
         <div className="w-1/2">
           <Heading
             className="text-heading"
@@ -25,8 +26,8 @@ const Discover = () => {
             title="Explore Challenges"
           />
         </div>
-        <div className="w-1/2">
-          <div className="w-96 h-96 bg-primary opacity-90 mask-blob-4"></div>
+        <div className="w-1/2 relative">
+          <Blob4Icon />
         </div>
       </div>
     </section>
