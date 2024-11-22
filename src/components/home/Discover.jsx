@@ -24,7 +24,7 @@ const Discover = () => {
               title="Topics range from climate change essentials to unique challenges developed in colloberation with like-minded organizations."
             />
             <PrimaryBTN
-              className="bg-transparent !text-primary hover:bg-transparent hover:text-hoverColor !p-0"
+              className="bg-transparent !text-primary hover:bg-transparent hover:!text-hoverColor !p-0"
               title="Explore Challenges"
             />
           </div>
