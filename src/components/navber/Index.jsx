@@ -5,7 +5,7 @@ import PrimaryBTN from "../utilities/PrimaryBTN";
 
 const Navbar = () => {
   return (
-    <div className="fixed top-0 left-0 bg-[#FFF] w-full">
+    <div className="fixed top-0 left-0 bg-[#FFF] w-full z-50">
       <nav className="container mx-auto flex justify-between items-center">
         <div className="w-[240px]">
           <Link>

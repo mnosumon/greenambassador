@@ -30,7 +30,7 @@ const Banner = () => {
           />
         </div>
       </div>
-      <div class="w-full relative h-[5vw] pointer-events-none bg-white custom-mask"></div>
+      <div class="w-full relative h-[5vw] pointer-events-none bg-[#F7F9FC] custom-mask"></div>
     </section>
   );
 };
