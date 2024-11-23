@@ -5,14 +5,14 @@ import ChallangeCard from "../ChallangeCard";
 
 const FeaturedChallenges = () => {
   return (
-    <section>
+    <section className="py-20">
       <div className="container mx-auto">
         <Heading
           className="!text-heading text-center"
           title="Featured Challenges"
         />
         <Peragrap
-          className="!text-heading text-center"
+          className="!text-heading text-center my-5"
           title={
             <>
               Below you can find a selection of our educational challenges.
@@ -22,7 +22,7 @@ const FeaturedChallenges = () => {
             </>
           }
         />
-        <div className="grid grid-cols-3 items-center justify-between py-10">
+        <div className="grid grid-cols-3  justify-between gap-8 py-10">
           <ChallangeCard />
         </div>
       </div>
