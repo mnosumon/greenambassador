@@ -14,7 +14,7 @@ const ChallangCategory = () => {
   return (
     <section className="bg-gradient-to-r py-24 from-[#009b72] to-[#046865]">
       <div className="container mx-auto text-center">
-        <Heading title="Challenge Categories" />
+        <Heading className="!text-[52px]" title="Challenge Categories" />
         <div className="flex flex-wrap items-center justify-center gap-3 pt-14">
           <div className="bg-subHeading flex items-center gap-3 py-5 px-8 w-fit rounded-md">
             <CategoryIcon sourc={ClimateChange} alter="Climate Change" />

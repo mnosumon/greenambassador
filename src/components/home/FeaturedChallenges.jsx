@@ -9,7 +9,7 @@ const FeaturedChallenges = () => {
     <section className="py-20">
       <div className="container mx-auto">
         <Heading
-          className="!text-heading text-center"
+          className="!text-heading text-center !text-[52px]"
           title="Featured Challenges"
         />
         <Peragrap

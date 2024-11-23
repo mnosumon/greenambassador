@@ -11,7 +11,7 @@ const BlockChainPowered = () => {
     <section className="py-20 bg-subHeading">
       <div className="container mx-auto">
         <Heading
-          className="!text-heading text-center mb-5"
+          className="!text-heading text-center mb-5 !text-[52px]"
           title="Blockchain Powered"
         />
         <Peragrap
