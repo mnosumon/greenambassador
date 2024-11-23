@@ -5,6 +5,7 @@ import Discover from "../../components/home/Discover";
 import Learning from "../../components/home/Learning";
 import RealWorld from "../../components/home/RealWorld";
 import ChallangCategory from "../../components/home/ChallangCategory";
+import FeaturedChallenges from "../../components/home/FeaturedChallenges";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Learning />
       <RealWorld />
       <ChallangCategory />
+      <FeaturedChallenges />
     </div>
   );
 };
