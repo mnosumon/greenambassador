@@ -6,6 +6,7 @@ import Learning from "../../components/home/Learning";
 import RealWorld from "../../components/home/RealWorld";
 import ChallangCategory from "../../components/home/ChallangCategory";
 import FeaturedChallenges from "../../components/home/FeaturedChallenges";
+import BlockChainPowered from "../../components/home/BlockChainPowered";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <RealWorld />
       <ChallangCategory />
       <FeaturedChallenges />
+      <BlockChainPowered />
     </div>
   );
 };
