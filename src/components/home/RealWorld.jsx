@@ -8,7 +8,7 @@ import VeworldIMG from "../../assets/image/veworldImg.png";
 const RealWorld = () => {
   return (
     <div>
-      <section className="py-28">
+      <section className="py-36">
         <div className="container mx-auto flex items-center gap-10">
           <div className="w-1/2">
             <div className="bg-[#EAEDF2] py-3 px-5 rounded-full w-fit mb-10">

@@ -4,6 +4,7 @@ import UserCount from "../../components/home/UserCount";
 import Discover from "../../components/home/Discover";
 import Learning from "../../components/home/Learning";
 import RealWorld from "../../components/home/RealWorld";
+import ChallangCategory from "../../components/home/ChallangCategory";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Discover />
       <Learning />
       <RealWorld />
+      <ChallangCategory />
     </div>
   );
 };
