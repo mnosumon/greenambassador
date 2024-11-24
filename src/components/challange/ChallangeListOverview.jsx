@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import PrimaryBTN from "../utilities/PrimaryBTN";
 import AtpTour from "../../assets/image/challangeCard/atp-tour.jpg";
 import MicroplasticsMin from "../../assets/image/challangeCard/microplastics-min.png";
-import SubHeading from "../utilities/SubHeading";
 import NavLinks from "../utilities/NavLinks";
 
 const ChallangeListOverview = () => {

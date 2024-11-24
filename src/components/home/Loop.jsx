@@ -4,6 +4,8 @@ import LogoMain from "../../assets/image/logoMain.png";
 import MonthlyUpdate from "../../assets/image/monthlyUpdate.png";
 import SubHeading from "../utilities/SubHeading";
 import PrimaryBTN from "../utilities/PrimaryBTN";
+import { Link } from "react-router-dom";
+import NavLinks from "../utilities/NavLinks";
 
 const Loop = () => {
   return (
@@ -18,12 +20,17 @@ const Loop = () => {
         </div>
         <div className="grid grid-cols-2 items-center justify-between pt-14">
           <div className="w-full flex items-center gap-5">
-            <div className="w-1/2 rounded-md overflow-hidden">
-              <img className="w-full " src={LogoMain} alt="" />
-            </div>
-            <div className="">
-              <SubHeading
-                className="!text-[#000] !text-[24px]"
+            <Link className="h-auto w-2/5 rounded-md overflow-hidden block relative">
+              <img
+                className="w-full h-full object-cover"
+                src={LogoMain}
+                alt="AtpTour Image"
+              />
+              <div className="w-full h-full hover:bg-[#7c71715c] absolute top-0 left-0 transition-all duration-300 ease-in-out"></div>
+            </Link>
+            <div className="w-3/5">
+              <NavLinks
+                className="hover:!text-hoverColor !text-[#3e424a] !text-[24px] block !p-0"
                 title="Automated Reward Pay outs with Sustainability Proofs"
               />
               <span className="text-lineColor text-sm font-nunito">
@@ -32,12 +39,17 @@ const Loop = () => {
             </div>
           </div>
           <div className="w-full flex items-center gap-5">
-            <div className="w-1/2 rounded-md overflow-hidden">
-              <img className="w-full " src={MonthlyUpdate} alt="" />
-            </div>
-            <div className="">
-              <SubHeading
-                className="!text-[#000] !text-[24px]"
+            <Link className="h-auto w-2/5 rounded-md overflow-hidden block relative">
+              <img
+                className="w-full h-full object-cover"
+                src={MonthlyUpdate}
+                alt="AtpTour Image"
+              />
+              <div className="w-full h-full hover:bg-[#7c71715c] absolute top-0 left-0 transition-all duration-300 ease-in-out"></div>
+            </Link>
+            <div className="w-3/5">
+              <NavLinks
+                className="hover:!text-hoverColor !text-[#3e424a] !text-[24px] block !p-0"
                 title="August 2024: Improved security and Rewards overview"
               />
               <span className="text-lineColor text-sm font-nunito">
