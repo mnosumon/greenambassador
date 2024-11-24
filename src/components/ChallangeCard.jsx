@@ -5,6 +5,7 @@ import Peragrap from "./utilities/Peragrap";
 import { TaskClip } from "../assets/svg/TaskClip";
 import { Clock } from "../assets/svg/Clock";
 import { challangeItem } from "../mapItem/challangeCard/CardObject";
+import { Link } from "react-router-dom";
 
 const ChallangeCard = () => {
   return (
@@ -13,25 +14,26 @@ const ChallangeCard = () => {
         challangeItem.map((item, index) => (
           <div
             key={index}
-            className="w-full rounded-md shadow-md overflow-hidden relative"
+            className="w-full rounded-md shadow-md overflow-hidden relative transition-all duration-300 ease-in-out hover:shadow-[#8b8585] hover:scale-y-[1.03]"
           >
             {/* Image Section */}
-            <div className="w-full h-auto relative">
+            <Link className="w-full h-[250px] block relative">
               <img
                 className="w-full h-full object-cover"
                 src={item.image}
-                alt={item.title || "Challange Image"} // Fallback for alt
+                alt={item.title || "Challange Image"}
               />
+              <div className="w-full h-full hover:bg-[#7c717134] absolute top-0 left-0 transition-all duration-300 ease-in-out"></div>
               <PrimaryBTN
-                className="absolute right-5 bottom-5 !px-3 !py-1 rounded-md !text-sm"
+                className="absolute right-5 bottom-5 !px-3 !py-1 rounded-md !text-sm z-10"
                 title={item.isActive}
               />
-            </div>
+            </Link>
 
             {/* Content Section */}
-            <div className="px-6 pb-20 box-border ">
+            <div className="px-6 pb-20 pt-10 box-border ">
               <PrimaryBTN
-                className="!bg-[#009b722c] hover:!bg-primary text-primary hover:text-subHeading rounded-md !px-3 !py-1 !text-base"
+                className="!bg-[#009b722c] hover:!bg-primary !text-primary hover:text-subHeading rounded-md !px-3 !py-1 !text-base"
                 title={item.category}
               />
               <Heading
