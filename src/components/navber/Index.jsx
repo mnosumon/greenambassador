@@ -1,7 +1,8 @@
 import React from "react";
 import HeaderLogo from "../../assets/image/logo-header.png";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import PrimaryBTN from "../utilities/PrimaryBTN";
+import NavLinks from "../utilities/NavLinks";
 
 const Navbar = () => {
   return (
@@ -14,15 +15,23 @@ const Navbar = () => {
         </div>
         <div className="">
           <ul className="">
-            <NavLink to="/" className="navLinkStyle">
-              Get Start
-            </NavLink>
-            <NavLink to="/challange" className="navLinkStyle">
-              Challange
-            </NavLink>
-            <NavLink to="/about" className="relative navLinkStyle triangle">
-              About
-            </NavLink>
+            <NavLinks
+              to="/"
+              className="[&.active]:text-hoverColor"
+              title="Get Start"
+            />
+
+            <NavLinks
+              to="/challange"
+              className="[&.active]:text-hoverColor"
+              title="Challange"
+            />
+
+            <NavLinks
+              to="/about"
+              className="relative [&.active]:text-hoverColor triangle"
+              title="About"
+            />
             <PrimaryBTN className="ml-5 !py-3" title="account" />
           </ul>
         </div>

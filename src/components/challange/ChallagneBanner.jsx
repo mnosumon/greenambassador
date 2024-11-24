@@ -25,7 +25,7 @@ const ChallagneBanner = () => {
             />
           </div>
         </div>
-        ;
+
         <div className="w-1/2">
           <div class="absolute z-[1] top-36 h-[80%] w-[5vw] max-w-[72px] bg-subHeading mask-divider-side transform scale-y-[-1] hidden lg:block"></div>
 
