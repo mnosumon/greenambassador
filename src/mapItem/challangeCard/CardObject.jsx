@@ -33,4 +33,64 @@ export const challangeItem = [
     task: "2 tasks",
     time: " 16 min",
   },
+  {
+    image: MicroplasticsMin,
+    isActive: "available",
+    category: "Biospheres and Ecosystems",
+    title: "Microplastics",
+    description:
+      "Learn what microplastics are, where they come from and the impact they have on us and our planet in our microplastics challenge.",
+    task: "2 tasks",
+    time: " 16 min",
+  },
+  {
+    image: MicroplasticsMin,
+    isActive: "available",
+    category: "Biospheres and Ecosystems",
+    title: "Microplastics",
+    description:
+      "Learn what microplastics are, where they come from and the impact they have on us and our planet in our microplastics challenge.",
+    task: "2 tasks",
+    time: " 16 min",
+  },
+  {
+    image: MicroplasticsMin,
+    isActive: "available",
+    category: "Biospheres and Ecosystems",
+    title: "Microplastics",
+    description:
+      "Learn what microplastics are, where they come from and the impact they have on us and our planet in our microplastics challenge.",
+    task: "2 tasks",
+    time: " 16 min",
+  },
+  {
+    image: MicroplasticsMin,
+    isActive: "available",
+    category: "Biospheres and Ecosystems",
+    title: "Microplastics",
+    description:
+      "Learn what microplastics are, where they come from and the impact they have on us and our planet in our microplastics challenge.",
+    task: "2 tasks",
+    time: " 16 min",
+  },
+  {
+    image: MicroplasticsMin,
+    isActive: "available",
+    category: "Biospheres and Ecosystems",
+    title: "Microplastics",
+    description:
+      "Learn what microplastics are, where they come from and the impact they have on us and our planet in our microplastics challenge.",
+    task: "2 tasks",
+    time: " 16 min",
+  },
+  {
+    image: MicroplasticsMin,
+    isActive: "available",
+    category: "Biospheres and Ecosystems",
+    title: "Microplastics",
+    description:
+      "Learn what microplastics are, where they come from and the impact they have on us and our planet in our microplastics challenge.",
+    task: "2 tasks",
+    time: " 16 min",
+  },
 ];

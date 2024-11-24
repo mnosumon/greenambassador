@@ -5,13 +5,16 @@ import Peragrap from "./utilities/Peragrap";
 import { TaskClip } from "../assets/svg/TaskClip";
 import { Clock } from "../assets/svg/Clock";
 import { challangeItem } from "../mapItem/challangeCard/CardObject";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const ChallangeCard = () => {
+  const location = useLocation();
+  const mapItemDevide =
+    location.pathname === "/" ? challangeItem.slice(0, 3) : challangeItem;
   return (
     <>
-      {challangeItem.length > 0 ? (
-        challangeItem.map((item, index) => (
+      {mapItemDevide.length > 0 ? (
+        mapItemDevide.map((item, index) => (
           <div
             key={index}
             className="w-full rounded-md shadow-md overflow-hidden relative transition-all duration-300 ease-in-out hover:shadow-[#8b8585] hover:scale-y-[1.03]"
