@@ -7,8 +7,8 @@ import PrimaryBTN from "../utilities/PrimaryBTN";
 
 const Loop = () => {
   return (
-    <section className="py-28">
-      <div className="container mx-auto">
+    <section className="pt-28">
+      <div className="container mx-auto pb-16">
         <Heading
           className="!text-heading !text-[52px]"
           title="Stay in the Loop"
@@ -47,6 +47,7 @@ const Loop = () => {
           </div>
         </div>
       </div>
+      <div className="relative w-full h-[5vw] sm:h-[7vw] md:h-[10vw] bg-gradient-to-r from-[#009b72] to-[#046865] mask-divider"></div>
     </section>
   );
 };
