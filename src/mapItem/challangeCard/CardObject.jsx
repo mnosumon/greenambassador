@@ -1,6 +1,15 @@
 import AtpTour from "../../assets/image/challangeCard/atp-tour.jpg";
 import SpecialtyCoffee from "../../assets/image/challangeCard/specialty-coffee.png";
 import MicroplasticsMin from "../../assets/image/challangeCard/microplastics-min.png";
+import OzoneLayer from "../../assets/image/challangeCard/ozone-layer-min.png";
+import InvasiveSpecies from "../../assets/image/challangeCard/invasive-species-min.png";
+import Biochar from "../../assets/image/challangeCard/biochar-min.png";
+import PhantomLoads from "../../assets/image/challangeCard/phantom-loads-min.png";
+import Reduce3 from "../../assets/image/challangeCard/3r-min.png";
+import FoodSafety from "../../assets/image/challangeCard/food-safety-min.png";
+import Arctic from "../../assets/image/challangeCard/arctic-min.png";
+import SustainableCoffee from "../../assets/image/challangeCard/sustainable-coffee-min.png";
+import ClimateChangeEasy from "../../assets/image/challangeCard/climate-change-easy-min.png";
 
 export const challangeItem = [
   {
@@ -34,7 +43,7 @@ export const challangeItem = [
     time: " 16 min",
   },
   {
-    image: MicroplasticsMin,
+    image: OzoneLayer,
     isActive: "available",
     category: "Biospheres and Ecosystems",
     title: "Microplastics",
@@ -44,7 +53,7 @@ export const challangeItem = [
     time: " 16 min",
   },
   {
-    image: MicroplasticsMin,
+    image: InvasiveSpecies,
     isActive: "available",
     category: "Biospheres and Ecosystems",
     title: "Microplastics",
@@ -54,7 +63,7 @@ export const challangeItem = [
     time: " 16 min",
   },
   {
-    image: MicroplasticsMin,
+    image: Biochar,
     isActive: "available",
     category: "Biospheres and Ecosystems",
     title: "Microplastics",
@@ -64,7 +73,7 @@ export const challangeItem = [
     time: " 16 min",
   },
   {
-    image: MicroplasticsMin,
+    image: PhantomLoads,
     isActive: "available",
     category: "Biospheres and Ecosystems",
     title: "Microplastics",
@@ -74,7 +83,7 @@ export const challangeItem = [
     time: " 16 min",
   },
   {
-    image: MicroplasticsMin,
+    image: Reduce3,
     isActive: "available",
     category: "Biospheres and Ecosystems",
     title: "Microplastics",
@@ -84,7 +93,7 @@ export const challangeItem = [
     time: " 16 min",
   },
   {
-    image: MicroplasticsMin,
+    image: FoodSafety,
     isActive: "available",
     category: "Biospheres and Ecosystems",
     title: "Microplastics",
