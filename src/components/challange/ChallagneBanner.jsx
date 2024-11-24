@@ -8,7 +8,7 @@ import Peragrap from "../utilities/Peragrap";
 const ChallagneBanner = () => {
   return (
     <section className="pb-20 pt-36">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center bg-subHeading">
         <div className="w-1/2">
           <div className="w-4/5">
             <Heading
@@ -16,19 +16,20 @@ const ChallagneBanner = () => {
               title="Exploring the Hidden Sustainable Benefits of Specialty Coffee"
             />
             <Peragrap
-              className="text-textColor mb-8"
+              className="text-textColor my-6"
               title="This challenge explores the sustainable and social benefits of specialty coffee, from micro-lot farming to community initiatives, highlighting its impact on the environment and livelihoods."
             />
             <PrimaryBTN
-              className="bg-transparent !text-primary hover:bg-transparent hover:!text-hoverColor !p-0"
-              title="Explore Challenges"
+              className="!py-3"
+              title="Start Challenge and Earn 12 B3TR"
             />
           </div>
         </div>
+        ;
         <div className="w-1/2">
-          <div class="absolute z-[1] top-0 h-full w-[5vw] max-w-[72px] bg-white mask-divider-side transform scale-y-[-1] hidden lg:block"></div>
+          <div class="absolute z-[1] top-36 h-[80%] w-[5vw] max-w-[72px] bg-subHeading mask-divider-side transform scale-y-[-1] hidden lg:block"></div>
 
-          <Link className="w-full  block relative">
+          <Link className="w-full overflow-hidden  block relative h-[80vh]">
             <img
               className="w-full h-full object-cover"
               src={SpecialtyCoffee}
