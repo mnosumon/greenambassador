@@ -17,7 +17,7 @@ const ChallangeCard = () => {
         mapItemDevide.map((item, index) => (
           <div
             key={index}
-            className="w-full rounded-md shadow-md overflow-hidden relative transition-all duration-300 ease-in-out hover:shadow-[#8b8585] hover:scale-y-[1.03]"
+            className="w-full rounded-md shadow-md overflow-hidden relative transition-all duration-300 ease-in-out hover:shadow-[#8b8585] hover:-translate-y-3"
           >
             {/* Image Section */}
             <Link className="w-full h-[250px] block relative">
@@ -26,7 +26,7 @@ const ChallangeCard = () => {
                 src={item.image}
                 alt={item.title || "Challange Image"}
               />
-              <div className="w-full h-full hover:bg-[#7c717134] absolute top-0 left-0 transition-all duration-300 ease-in-out"></div>
+              <div className="w-full h-full hover:bg-[#7c717152] absolute top-0 left-0 transition-all duration-300 ease-in-out"></div>
               <PrimaryBTN
                 className="absolute right-5 bottom-5 !px-3 !py-1 rounded-md !text-sm z-10"
                 title={item.isActive}
