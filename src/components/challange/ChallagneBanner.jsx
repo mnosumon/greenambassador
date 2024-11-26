@@ -8,8 +8,8 @@ import Peragrap from "../utilities/Peragrap";
 const ChallagneBanner = () => {
   return (
     <section className="pb-20 pt-36">
-      <div className="container mx-auto flex justify-between items-center bg-subHeading">
-        <div className="w-1/2">
+      <div className="container mx-auto flex justify-between items-center bg-subHeading shadow-md">
+        <div className="w-1/2 pl-20">
           <div className="w-4/5">
             <Heading
               className="!text-heading"
