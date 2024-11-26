@@ -40,15 +40,20 @@ const Paginate = ({ itemsPerPage }) => {
   return (
     <>
       <Items currentItems={currentItems} />
-      <ReactPaginate
-        breakLabel="..."
-        nextLabel="next >"
-        onPageChange={handlePageClick}
-        pageRangeDisplayed={5}
-        pageCount={pageCount}
-        previousLabel="< previous"
-        renderOnZeroPageCount={null}
-      />
+      <div className="flex justify-between">
+        <ReactPaginate
+          breakLabel="..."
+          nextLabel="next >"
+          onPageChange={handlePageClick}
+          pageRangeDisplayed={5}
+          pageCount={pageCount}
+          previousLabel="< previous"
+          renderOnZeroPageCount={null}
+          pageLinkClassName="p-4 text-base font-normal border border-[#D8D8D8] inline-block"
+          pageClassName="m-2"
+          containerClassName="flex gap-3 items-center"
+        />
+      </div>
     </>
   );
 };
