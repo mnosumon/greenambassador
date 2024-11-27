@@ -6,13 +6,11 @@ import { Clock } from "../../assets/svg/Clock";
 import { TaskClip } from "../../assets/svg/TaskClip";
 import Heading from "../utilities/Heading";
 import PrimaryBTN from "../utilities/PrimaryBTN";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { GrFormPreviousLink } from "react-icons/gr";
 import { GrFormNextLink } from "react-icons/gr";
 
 function Items({ currentItems }) {
-  console.log(currentItems);
-
   return (
     <>
       <div className="grid grid-cols-3  justify-between gap-8 py-10">
@@ -81,15 +79,19 @@ function Items({ currentItems }) {
 }
 
 const Paginate = ({ itemsPerPage }) => {
+  const location = useLocation();
+  const challangeItems =
+    location.pathname === "/" ? ChallangeItem.slice(0, 3) : ChallangeItem;
+
   const [itemOffset, setItemOffset] = useState(0);
 
   const endOffset = itemOffset + itemsPerPage;
   console.log(`Loading items from ${itemOffset} to ${endOffset}`);
-  const currentItems = ChallangeItem.slice(itemOffset, endOffset);
-  const pageCount = Math.ceil(ChallangeItem.length / itemsPerPage);
+  const currentItems = challangeItems.slice(itemOffset, endOffset);
+  const pageCount = Math.ceil(challangeItems.length / itemsPerPage);
 
   const handlePageClick = (event) => {
-    const newOffset = (event.selected * itemsPerPage) % ChallangeItem.length;
+    const newOffset = (event.selected * itemsPerPage) % challangeItems.length;
     console.log(
       `User requested page number ${event.selected}, which is offset ${newOffset}`
     );
@@ -99,26 +101,28 @@ const Paginate = ({ itemsPerPage }) => {
   return (
     <>
       <Items currentItems={currentItems} />
-      <div className="flex justify-center items-center">
-        <ReactPaginate
-          breakLabel="..."
-          nextLabel={<GrFormNextLink />}
-          onPageChange={handlePageClick}
-          pageRangeDisplayed={5}
-          pageCount={pageCount}
-          previousLabel={<GrFormPreviousLink />}
-          renderOnZeroPageCount={null}
-          pageLinkClassName="px-4 py-2 text-base font-bold border  border-[#EAEDF2] inline-block text-[#009b72] !bg-transparent "
-          pageClassName=""
-          containerClassName="flex items-center border rounded-full border-[#EAEDF2] bg-[#FFF]"
-          previousLinkClassName="pl-4 pr-2 py-2 text-3xl font-normal inline-block "
-          nextLinkClassName="pr-4 pl-2 py-2 text-3xl font-normal inline-block "
-          activeClassName=""
-          activeLinkClassName="!bg-[#009b72] !text-[#FFF]"
-          nextClassName="text-[#009b72] flex justify-center items-center"
-          previousClassName="text-[#009b72] flex justify-center items-center"
-        />
-      </div>
+      {location.pathname !== "/" && (
+        <div className="flex justify-center items-center">
+          <ReactPaginate
+            breakLabel="..."
+            nextLabel={<GrFormNextLink />}
+            onPageChange={handlePageClick}
+            pageRangeDisplayed={5}
+            pageCount={pageCount}
+            previousLabel={<GrFormPreviousLink />}
+            renderOnZeroPageCount={null}
+            pageLinkClassName="px-4 py-2 text-base font-bold border  border-[#EAEDF2] inline-block text-[#009b72] !bg-transparent "
+            pageClassName=""
+            containerClassName="flex items-center border rounded-full border-[#EAEDF2] bg-[#FFF]"
+            previousLinkClassName="pl-4 pr-2 py-2 text-3xl font-normal inline-block "
+            nextLinkClassName="pr-4 pl-2 py-2 text-3xl font-normal inline-block "
+            activeClassName=""
+            activeLinkClassName="!bg-[#009b72] !text-[#FFF]"
+            nextClassName="text-[#009b72] flex justify-center items-center"
+            previousClassName="text-[#009b72] flex justify-center items-center"
+          />
+        </div>
+      )}
     </>
   );
 };
