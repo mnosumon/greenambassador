@@ -7,6 +7,8 @@ import { TaskClip } from "../../assets/svg/TaskClip";
 import Heading from "../utilities/Heading";
 import PrimaryBTN from "../utilities/PrimaryBTN";
 import { Link } from "react-router-dom";
+import { GrFormPreviousLink } from "react-icons/gr";
+import { GrFormNextLink } from "react-icons/gr";
 
 function Items({ currentItems }) {
   console.log(currentItems);
@@ -97,22 +99,24 @@ const Paginate = ({ itemsPerPage }) => {
   return (
     <>
       <Items currentItems={currentItems} />
-      <div className="flex justify-center">
+      <div className="flex justify-center items-center">
         <ReactPaginate
           breakLabel="..."
-          nextLabel="next >"
+          nextLabel={<GrFormNextLink />}
           onPageChange={handlePageClick}
           pageRangeDisplayed={5}
           pageCount={pageCount}
-          previousLabel="< previous"
+          previousLabel={<GrFormPreviousLink />}
           renderOnZeroPageCount={null}
-          pageLinkClassName="px-4 py-2 text-base font-normal border  border-[#EAEDF2] inline-block text-[#009b72] !bg-transparent"
+          pageLinkClassName="px-4 py-2 text-base font-bold border  border-[#EAEDF2] inline-block text-[#009b72] !bg-transparent "
           pageClassName=""
           containerClassName="flex items-center border rounded-full border-[#EAEDF2] bg-[#FFF]"
-          nextClassName="px-4 py-2 text-base font-normal inline-block "
-          previousLinkClassName="px-4 py-2 text-base font-normal inline-block "
+          previousLinkClassName="pl-4 pr-2 py-2 text-3xl font-normal inline-block "
+          nextLinkClassName="pr-4 pl-2 py-2 text-3xl font-normal inline-block "
           activeClassName=""
           activeLinkClassName="!bg-[#009b72] !text-[#FFF]"
+          nextClassName="text-[#009b72] flex justify-center items-center"
+          previousClassName="text-[#009b72] flex justify-center items-center"
         />
       </div>
     </>

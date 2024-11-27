@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom";
 import Paginate from "../challangePaginate/ChallangeItemsPaginate";
 
 const FeaturedChallenges = () => {
-  const [itemsPerPage, setItemsPerPage] = useState(3);
+  const [itemsPerPage, setItemsPerPage] = useState(6);
   const location = useLocation();
   return (
     <section className="py-20">
