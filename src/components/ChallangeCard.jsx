@@ -44,7 +44,7 @@ const ChallangeCard = () => {
                 title={item.title}
               />
               <Peragrap
-                className="!text-heading !text-lg !leading-[1.3] "
+                className="!text-heading !text-lg !leading-[1.3]"
                 title={item.description}
               />
             </div>

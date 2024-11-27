@@ -111,15 +111,15 @@ const Paginate = ({ itemsPerPage }) => {
             pageCount={pageCount}
             previousLabel={<GrFormPreviousLink />}
             renderOnZeroPageCount={null}
-            pageClassName=""
+            pageClassName="text-base font-bold border-x-[1px] hover:!bg-[#d8d9db] border-[#EAEDF2] inline-block text-[#009b72] !bg-transparent transition-colors duration-300 ease-in-out !py-3"
             containerClassName="flex items-center border rounded-full border-[#EAEDF2] bg-[#FFF] overflow-hidden h-10"
-            previousLinkClassName="pl-4 pr-2 py-2 text-3xl font-normal inline-block hover:!bg-[#d8d9db] transition-colors duration-500 ease-in-out"
-            nextLinkClassName="pr-4 pl-2 py-2 text-3xl font-normal inline-block hover:!bg-[#d8d9db] transition-colors duration-500 ease-in-out"
+            previousLinkClassName="pl-4 pr-2 py-2 text-3xl font-normal inline-block hover:!bg-[#d8d9db] transition-colors duration-300 ease-in-out"
+            nextLinkClassName="pr-4 pl-2 py-2 text-3xl font-normal inline-block hover:!bg-[#d8d9db] transition-colors duration-300 ease-in-out"
             activeClassName=""
             activeLinkClassName="!bg-[#009b72] !text-[#FFF] hover:!bg-[#009b72]"
             nextClassName="text-[#009b72] flex justify-center items-center"
             previousClassName="text-[#009b72] flex justify-center items-center"
-            pageLinkClassName="text-base font-bold border-x-[1px] hover:bg-[#d8d9db] border-[#EAEDF2] inline-block text-[#009b72] !bg-transparent px-4 py-3  transition-colors duration-500 ease-in-out"
+            pageLinkClassName="px-4 py-3"
           />
         </div>
       )}
