@@ -11,7 +11,7 @@ import Arctic from "../../assets/image/challangeCard/arctic-min.png";
 import SustainableCoffee from "../../assets/image/challangeCard/sustainable-coffee-min.png";
 import ClimateChangeEasy from "../../assets/image/challangeCard/climate-change-easy-min.png";
 
-export const challangeItem = [
+const challangeItem = [
   {
     image: SpecialtyCoffee,
     isActive: "available",
@@ -103,3 +103,4 @@ export const challangeItem = [
     time: " 16 min",
   },
 ];
+export default challangeItem;

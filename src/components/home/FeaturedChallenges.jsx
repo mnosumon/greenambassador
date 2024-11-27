@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Heading from "../utilities/Heading";
 import Peragrap from "../utilities/Peragrap";
-import ChallangeCard from "../ChallangeCard";
 import PrimaryBTN from "../utilities/PrimaryBTN";
 import { useLocation } from "react-router-dom";
+import Paginate from "../challangePaginate/ChallangeItemsPaginate";
 
 const FeaturedChallenges = () => {
+  const [itemsPerPage, setItemsPerPage] = useState(3);
   const location = useLocation();
   return (
     <section className="py-20">
@@ -31,9 +32,7 @@ const FeaturedChallenges = () => {
         ) : (
           ""
         )}
-        <div className="grid grid-cols-3  justify-between gap-8 py-10">
-          <ChallangeCard />
-        </div>
+        <Paginate itemsPerPage={itemsPerPage} />
         {location.pathname === "/" && (
           <div className="text-center py-5">
             <PrimaryBTN title="explore all challange" />

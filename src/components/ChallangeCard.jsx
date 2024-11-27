@@ -4,13 +4,13 @@ import Heading from "./utilities/Heading";
 import Peragrap from "./utilities/Peragrap";
 import { TaskClip } from "../assets/svg/TaskClip";
 import { Clock } from "../assets/svg/Clock";
-import { challangeItem } from "../mapItem/challangeCard/CardObject";
 import { Link, useLocation } from "react-router-dom";
+import ChallangeItem from "../mapItem/challangeCard/CardObject";
 
 const ChallangeCard = () => {
   const location = useLocation();
   const mapItemDevide =
-    location.pathname === "/" ? challangeItem.slice(0, 3) : challangeItem;
+    location.pathname === "/" ? ChallangeItem.slice(0, 3) : ChallangeItem;
   return (
     <>
       {mapItemDevide.length > 0 ? (

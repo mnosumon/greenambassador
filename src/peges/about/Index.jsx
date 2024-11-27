@@ -1,17 +1,14 @@
 import React, { useState } from "react";
-import Paginate from "../../components/dummtPginate/DummyPaginat";
+import Paginate from "../../components/challangePaginate/ChallangeItemsPaginate";
 
 const About = () => {
-  const [itemsPerPage, setItemsPerPage] = useState(4);
+  const [itemsPerPage, setItemsPerPage] = useState(3);
 
   return (
     <>
-      <section className="mb-[140px] mt-[124px]">
+      <section className="py-28">
         <div className="container mx-auto">
-          <Paginate
-            setItemsPerPage={setItemsPerPage}
-            itemsPerPage={itemsPerPage}
-          />
+          <Paginate itemsPerPage={itemsPerPage} />
         </div>
       </section>
     </>
