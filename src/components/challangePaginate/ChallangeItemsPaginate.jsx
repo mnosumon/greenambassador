@@ -106,11 +106,13 @@ const Paginate = ({ itemsPerPage }) => {
           pageCount={pageCount}
           previousLabel="< previous"
           renderOnZeroPageCount={null}
-          pageLinkClassName="px-4 py-2 text-base font-normal border  border-[#EAEDF2] inline-block"
+          pageLinkClassName="px-4 py-2 text-base font-normal border  border-[#EAEDF2] inline-block text-[#009b72] !bg-transparent"
           pageClassName=""
-          containerClassName="flex items-center border rounded-full border-[#EAEDF2]"
-          nextClassName="px-4 py-2 text-base font-normal inline-block"
-          previousLinkClassName="px-4 py-2 text-base font-normal inline-block"
+          containerClassName="flex items-center border rounded-full border-[#EAEDF2] bg-[#FFF]"
+          nextClassName="px-4 py-2 text-base font-normal inline-block "
+          previousLinkClassName="px-4 py-2 text-base font-normal inline-block "
+          activeClassName=""
+          activeLinkClassName="!bg-[#009b72] !text-[#FFF]"
         />
       </div>
     </>
