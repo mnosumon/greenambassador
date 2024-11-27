@@ -13,7 +13,7 @@ import { GrFormNextLink } from "react-icons/gr";
 function Items({ currentItems }) {
   return (
     <>
-      <div className="grid grid-cols-3  justify-between gap-8 py-10">
+      <div className="grid grid-cols-3 justify-between gap-8 py-10">
         {currentItems &&
           currentItems.map((item, index) => (
             <div

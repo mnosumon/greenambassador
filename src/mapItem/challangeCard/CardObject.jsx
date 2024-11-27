@@ -16,16 +16,6 @@ const challangeItem = [
   {
     image: Hurricanes,
     isActive: "available",
-    category: "Food and Agriculture",
-    title: "Exploring the Hidden Sustainable Benefits of Specialty Coffee",
-    description:
-      "This challenge explores the sustainable and social benefits of specialty coffee, from micro-lot farming to community initiatives, highlighting its impact on the environment and livelihoods.",
-    task: "6 Task",
-    time: "25 min",
-  },
-  {
-    image: SpecialtyCoffee,
-    isActive: "available",
     category: "Biospheres and Ecosystems",
     title: "Hurricanes",
     description:
@@ -33,6 +23,17 @@ const challangeItem = [
     task: "8 Task",
     time: "23 min",
   },
+  {
+    image: SpecialtyCoffee,
+    isActive: "available",
+    category: "Food and Agriculture",
+    title: "Exploring the Hidden Sustainable Benefits of Specialty Coffee",
+    description:
+      "This challenge explores the sustainable and social benefits of specialty coffee, from micro-lot farming to community initiatives, highlighting its impact on the environment and livelihoods.",
+    task: "6 Task",
+    time: "25 min",
+  },
+
   {
     image: AtpTour,
     isActive: "available",
