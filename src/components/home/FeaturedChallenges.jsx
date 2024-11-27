@@ -33,10 +33,12 @@ const FeaturedChallenges = () => {
           ""
         )}
         <Paginate itemsPerPage={itemsPerPage} />
-        {location.pathname === "/" && (
+        {location.pathname === "/" ? (
           <div className="text-center py-5">
             <PrimaryBTN title="explore all challange" />
           </div>
+        ) : (
+          ""
         )}
       </div>
     </section>
